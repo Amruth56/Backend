@@ -19,7 +19,7 @@
 // console.log(fs)
 
 const notes = require(`./02notes.js`)
-var _ = require('loadash')
+var _ = require('lodash')
 console.log("hiii")
 const age = notes.age;
 console.log(age)
