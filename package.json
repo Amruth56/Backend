@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "loadash": "^1.0.0"
+    "express": "^4.19.2",
+    "loadash": "^1.0.0",
+    "nodemon": "^3.1.4"
   }
 }
