@@ -8,6 +8,19 @@
     return `multiplication of ${a} and ${b} is ${a*b}`;
  }
 
+ module.exports.divi = function(a, b){
+   return `Division of ${a} and ${b} is ${a/b}`
+ }
  module.exports.add = adder
  module.exports.substract = sub
  module.exports.multiply = mul
+
+
+
+//  or
+
+// module.exports = {
+//    add: adder,
+//    substract: sub,
+//    multiply: mul,
+// }
