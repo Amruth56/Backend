@@ -12,7 +12,8 @@ app.get('/contact', (req, res)=> {
 })
 
 app.get('/profile/:name',  (req, res)=> {
-    res.render('profile', {person: req.params.name })
+    var data1 = {age: 29, job: 'Software Developer'}
+    res.render('profile', {person: req.params.name, data: data1 })
 })
 
 app.listen(3000)
