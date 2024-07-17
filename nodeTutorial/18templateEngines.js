@@ -7,7 +7,7 @@ app.get('/', (req, res)=> {
 })
 
 app.get('/contact', (req, res)=> {
-    res.send(__dirname + '/404.html')
+    res.sendFile(__dirname + '/16contact.html')
 })
 
 app.listen(3000)
