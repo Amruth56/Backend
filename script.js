@@ -1,7 +1,19 @@
-const http = require("http");
+const express = require("express");
+const app = express();
 
-const server = http.createServer((req, res) => {
-  res.end("hello world");
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+app.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
-server.listen(3000);
+app.get("/profile", (req, res, next) => {
+  return next(new Error("Something went wrong"));
+});
+
+app.use((err, req, res, next) => {
+  console.log(err.stack);
+  res.status(500).send("this goes in to the frontend");
+});
+app.listen(8080);

@@ -1,8 +1,8 @@
 {
   "dependencies": {
+    "chalk": "^5.3.0",
     "express": "^4.19.2",
-    "loadash": "^1.0.0",
-    "nodemon": "^3.1.4"
+    "loadash": "^1.0.0"
   },
   "name": "nodejs",
   "description": "* Its built on top of chrome v8 JS engine\r chrome v8 is known for high performance and efficiency execution of JS",
@@ -15,5 +15,8 @@
     "fun"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
