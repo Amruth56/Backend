@@ -30,7 +30,7 @@
     {% for i in employees %}
     <tr>
       <td>{{ i.first_name }}</td>
-      <td>{{ i.last_name }}</td>
+      <td>{{ i.last_name }}</ td>
       <td>
         {% if i.photo %}
           <img src="{{ i.photo.url }}" alt="Photo of {{ i.first_name }}" width="80" height="80">
