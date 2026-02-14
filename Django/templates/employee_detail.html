@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container pt-5">
+
+    <div class="card">
+        <p><strong>First Name:</strong> {{employee.first_name}}</p>
+        <p><strong>Last Name:</strong> {{employee.last_name}}</p>
+        <img src="{{employee.photo.url}}" alt="Photo of {{employee.first_name}}">
+        <p><strong>Designation:</strong> {{employee.designation}}</p>
+        <p><strong>Email:</strong> {{employee.email_address}}</p>
+        <p><strong>Phone:</strong> {{employee.phone_number}}</p>
+        <p><strong>Created At:</strong> {{employee.created_at}}</p>
+        <p><strong>Updated At:</strong> {{employee.updated_at}}</p>
+    </div>
+  </div>
+</body>
+</html>
